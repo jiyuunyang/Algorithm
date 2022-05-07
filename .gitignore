@@ -1,3 +1,7 @@
+# 강의자료
+*.pdf
+*.txt
+
 # Logs
 logs
 *.log
