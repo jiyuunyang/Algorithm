@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(a, b, c) {
+        let max, other, answer;
+        // other solution: use sum variable instead of other variable
+        // sum = a + b + c
+        // max - sum
+        if (a > b) {
+          max = a;
+          other = b + c;
+        } else {
+          max = b;
+          other = a + c;
+          0;
+        }
+        if (max < c) {
+          max = c;
+          other = a + b;
+        }
+        if (max < other) {
+          answer = 'YES';
+        } else {
+          answer = 'NO';
+        }
+        return answer;
+      }
+
+      console.log(solution(6, 7, 12));
+    </script>
+  </body>
+</html>
